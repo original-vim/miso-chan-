@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="c.html" />
+    <link rel="stylesheet" href="e.html" />
+    <link rel="stylesheet" href="lbh.css" />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+      }
+
+      .head {
+        background-color: white;
+        color: black;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .time {
+        font-size: 14px;
+        margin: 0;
+      }
+
+      .icons {
+        display: flex;
+        gap: 12px;
+        font-size: 12px;
+      }
+
+      .page {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .t3 {
+        font-size: 12px;
+        margin: 0;
+      }
+
+      .skip {
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+
+      .img-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+      }
+
+      .fashion {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+      }
+
+      .title {
+        text-align: center;
+        font-size: 20px;
+        margin: 10px 0;
+      }
+
+      .paragraph {
+        text-align: center;
+        font-size: 14px;
+        padding: 0 10px;
+        margin: 10px 0;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between; /* Keeps Back and Next on opposite sides */
+        align-items: flex-end; /* Aligns items to the bottom */
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .footer h3 {
+        margin: 0;
+      }
+
+      .footer .back {
+        position: absolute;
+        bottom: 10px; /* Aligns to the bottom */
+        left: 10px; /* Aligns to the left side */
+      }
+
+      .footer .next {
+        position: absolute;
+        bottom: 10px; /* Aligns to the bottom */
+        right: 10px; /* Aligns to the right side */
+      }
+
+      .footer a {
+        font-size: 16px;
+        color: blue;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 1px solid blue;
+        border-radius: 5px;
+        margin-right: 20px;
+      }
+
+      .footer a:hover {
+        background-color: blue;
+        color: white;
+      }
+
+      @media (max-width: 768px) {
+        .title {
+          font-size: 18px;
+        }
+        .paragraph {
+          font-size: 13px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .head {
+          font-size: 12px;
+          padding: 8px;
+        }
+        .icons {
+          gap: 8px;
+          font-size: 10px;
+        }
+        .title {
+          font-size: 16px;
+        }
+        .paragraph {
+          font-size: 12px;
+        }
+        .footer a {
+          font-size: 14px;
+          padding: 8px 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <h1 class="time">9:41</h1>
+      <div class="icons">
+        <i class="fa-solid fa-chart-simple"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-battery-full"></i>
+      </div>
+    </div>
+
+    <div class="page">
+      <h3 class="t2">3/4</h3>
+      <h3 class="skip">Skip</h3>
+    </div>
+
+    <div class="img-section">
+      <img
+        class="fashion"
+        src="images/Shopping bag-rafiki 1.png"
+        alt="Sales consulting"
+      />
+    </div>
+
+    <h3 class="title">Get Your Order</h3>
+    <p class="paragraph">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit.
+    </p>
+
+    <div class="footer">
+      <h3 class="back">
+        <a href="c.html">Back</a>
+      </h3>
+      <h3 class="next">
+        <a href="e.html">Get Started</a>
+      </h3>
+    </div>
+  </body>
+</html>

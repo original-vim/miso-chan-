@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="d.html" />
+    <link rel="stylesheet" href="f.html" />
+    <link rel="stylesheet" href="lbh.css" />
+    <link rel="stylesheet" href="g.html">
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <h1 class="time">9:41</h1>
+      <div class="icons">
+        <i class="fa-solid fa-chart-simple"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-battery-full"></i>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+      <h1 class="title">Welcome Back!</h1>
+
+      <!-- Login Form -->
+      <form action="/submit-data" method="POST" class="form">
+        <div class="input-group">
+          <i class="fa-regular fa-user"></i>
+
+          <label for="username">
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username or Email"
+            />
+          </label>
+        </div>
+
+        <div class="input-group">
+          <i class="fa-solid fa-lock" id="lock"></i>
+
+          <label for="password">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+          </label>
+
+          <i class="fa-regular fa-eye" id="eye"></i>
+        </div>
+
+        <a href="g.html" class="forgot-password">Forgot Password?</a>
+
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+
+      <p class="or-text">- OR Continue with -</p>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="#" aria-label="Google">
+          <i class="fa-brands fa-google"></i>
+        </a>
+        <a href="#" aria-label="Apple">
+          <i class="fa-brands fa-apple"></i>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <a href="d.html" class="back-btn">Back</a>
+        <a href="f.html" class="signup-btn">Sign Up</a>
+      </div>
+    </div>
+  </body>
+</html>
